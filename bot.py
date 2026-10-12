@@ -8,7 +8,7 @@ from telegram.ext import (
 )
 
 BASE_DIR = Path(__file__).resolve().parent
-DATA_FILE = BASE_DIR / "data.json"
+DATA_FILE = Path("/data/data.json")
 TOKEN = os.getenv("BOT_TOKEN", "").strip()
 ADMIN_IDS = {
     int(x.strip()) for x in os.getenv("ADMIN_IDS", "").split(",")
